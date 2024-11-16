@@ -1,11 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pălăria cu Airbag</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #d1e8e2, #92d5e6);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #005f73, #0a9396);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0a9396;
+            font-weight: bold;
+            margin: 0 20px;
+            font-size: 1.3rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #005f73;
+            transform: translateY(-5px);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(135deg, #0a9396, #005f73);
+            color: #fff;
+            padding: 70px 20px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            z-index: -1;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h2 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature h3 {
+            margin-bottom: 20px;
+            color: #005f73;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .feature p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        #how-it-works {
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #ffffff, #f2f7f8);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        #how-it-works h2 {
+            color: #005f73;
+            font-size: 2.2rem;
+        }
+
+        #how-it-works p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        footer {
+            background: #005f73;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 1rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        footer a {
+            color: #80deea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Sapca Airbag</h1>
+    </header>
+
+    <nav>
+        <a href="#features">Caracteristici</a>
+        <a href="#how-it-works">Cum Funcționează</a>
+        <a href="https://sapca-airbag.printify.me/products">Cumpara Acum!</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2>Siguranță și Eleganță</h2>
+            <p>Sapca viitorului care îți protejează capul. Ușoară, la modă și salvatoare de vieți.</p>
+        </section>
+
+        <section id="features">
+            <h2>Caracteristici</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Sistem Avansat de Airbag</h3>
+                    <p>Se declanșează în câteva milisecunde pentru a-ți proteja capul în timpul unui impact.</p>
+                </div>
+                <div class="feature">
+                    <h3>Design Modern</h3>
+                    <p>Perfect integrat în stilul tău zilnic, fără a compromite aspectul.</p>
+                </div>
+                <div class="feature">
+                    <h3>Senzori Reîncărcabili</h3>
+                    <p>Echipată cu detectoare de mișcare de ultimă generație, alimentate de o baterie reîncărcabilă.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>Cum Funcționează</h2>
+            <p>
+                Sapca Airbag detectează schimbările bruște de mișcare prin intermediul senzorilor avansați. La detectarea
+                unei căderi, sistemul declanșează un airbag care se umflă instantaneu, protejându-ți capul de impact. După
+                utilizare, airbagul poate fi înlocuit, menținând pălăria pregătită pentru următoarea ta aventură.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Ai întrebări? Scrie-ne la <a href="mailto:support@airbaghat.com">support@airbaghat.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sapca Airbag SRL. Vizitează-ne pe <a href="#">www.sapcaairbag.xyz</a></p>
+    </footer>
 </body>
+
 </html>
